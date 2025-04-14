@@ -3,8 +3,8 @@ import Sidebar from "./components/Sidebar"
 import Main from "./components/Main"
 import Footer from "./components/Footer"
 import Cart from "./components/Cart"
+import ViewProduct from "./components/ViewProduct"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Main/>}/>
                   <Route path="/cart" element={<Cart/>}/>
+                  <Route path="/product/:id" element={<ViewProduct/>}/>
                 </Routes>
               </BrowserRouter>
             </div>

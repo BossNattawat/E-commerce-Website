@@ -64,7 +64,7 @@ function Main() {
         <h1 className="text-2xl font-semibold mb-4">Products</h1>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-6 overflow-scroll overflow-x-hidden gap-5">
             {filteredProducts.map((item) => (
-                <Card key={item.id} title={item.brand + " " + item.model} img={item.img} price={item.price} rating={item.rating} handleAddToCart={handleAddToCart} id={Math.random()} />
+                <Card key={item.id} title={item.brand + " " + item.model} img={item.img} price={item.price} rating={item.rating} handleAddToCart={handleAddToCart} id={Math.random()} index={item.id} />
             ))}
         </div>
         {notify && (
